@@ -2,6 +2,9 @@
 FROM node:20-alpine AS build
 WORKDIR /app
 
+ARG REACT_APP_GITHUB_TOKEN
+ENV REACT_APP_GITHUB_TOKEN=$REACT_APP_GITHUB_TOKEN
+
 # Copy dependency manifests first (better caching)
 COPY package*.json ./
 RUN npm ci

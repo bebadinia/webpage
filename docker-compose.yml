@@ -4,6 +4,8 @@ services:
     build:
       context: .
       dockerfile: Dockerfile
+      args:
+        REACT_APP_GITHUB_TOKEN: ${REACT_APP_GITHUB_TOKEN}
     image: webpage-portfolio:local
     restart: unless-stopped
     ports:
