@@ -6,6 +6,8 @@ services:
       dockerfile: Dockerfile
       args:
         REACT_APP_GITHUB_TOKEN: ${REACT_APP_GITHUB_TOKEN}
+        GITHUB_USERNAME: ${GITHUB_USERNAME}
+        USE_GITHUB_DATA: ${USE_GITHUB_DATA}
     image: webpage-portfolio:local
     restart: unless-stopped
     ports:
