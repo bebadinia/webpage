@@ -25,9 +25,7 @@ export default function Contact() {
               {contactInfo.subtitle}
             </p>
             <div
-              className={
-                isDark ? "dark-mode contact-text-div" : "contact-text-div"
-              }
+              className={isDark ? "dark-mode contact-text-div" : "contact-text-div"}
             >
               {contactInfo.number && (
                 <>
@@ -41,6 +39,8 @@ export default function Contact() {
                   <br />
                 </>
               )}
+              <br />
+              <br />
               <a
                 className="contact-detail-email"
                 href={"mailto:" + contactInfo.email_address}

@@ -37,7 +37,6 @@ export default function Profile() {
     }
   }, []);
   if (
-    openSource.display &&
     openSource.showGithubProfile === "true" &&
     !(typeof prof === "string" || prof instanceof String)
   ) {
