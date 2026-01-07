@@ -23,7 +23,7 @@ const greeting = {
   username: "Benyamin Ebadinia",
   title: "Hi, I'm Ben",
   subTitle: emoji("I am a software engineer with experience building applications across full-stack development, systems tooling, and interactive user experiences."),
-  resumeLink:"/resume.pdf", // Set to empty to hide the button; Removed resume Link in Greeting.js to fix download issue (greeting.resumeLink &&) 
+  resumeLink:"/resume_fixed.pdf", // Set to empty to hide the button 
   displayGreeting: true // Set false to hide this section, defaults to true
 };
 
@@ -283,7 +283,7 @@ const achievementSection = {
       image: require("./assets/images/matlabLogo.png"),
       imageAlt: "MatLab Logo",
       footerLink: [
-        { name: "Certification", url: "/MatLabCertification.pdf"},
+        { name: "Certification", url: "/MatLabCertification.pdf", downloadName: "MatLabCertification.pdf" },
       ]
     }
   ],

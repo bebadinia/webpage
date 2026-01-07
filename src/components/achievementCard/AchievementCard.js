@@ -2,14 +2,10 @@ import React from "react";
 import "./AchievementCard.scss";
 
 export default function AchievementCard({cardInfo, isDark}) {
-  function openUrlInNewTab(url, name) {
-    if (!url) {
-      console.log(`URL for ${name} not found`);
-      return;
-    }
-    var win = window.open(url, "_blank");
-    win.focus();
-  }
+  const footer = Array.isArray(cardInfo.footer) ? cardInfo.footer : [];
+
+  const isPdf = (url) =>
+    typeof url === "string" && url.toLowerCase().endsWith(".pdf");
 
   return (
     <div className={isDark ? "dark-mode certificate-card" : "certificate-card"}>
@@ -29,19 +25,41 @@ export default function AchievementCard({cardInfo, isDark}) {
         </p>
       </div>
       <div className="certificate-card-footer">
-        {cardInfo.footer.map((v, i) => {
-          return (
-            <span
+        {footer.map((v, i) => {
+          const url = v?.url || "";
+          const pdf = isPdf(url);
+
+          // If no URL, render as non-clickable
+          if (!url) {
+            return (
+              <span
+                key={i}
+                className={isDark ? "dark-mode certificate-tag" : "certificate-tag"}
+                style={{ opacity: 0.6, cursor: "not-allowed" }}
+                title="Link not available"
+              >
+                {v?.name || "Link"}
+              </span>
+            );
+          }
+
+            return (
+            <a
               key={i}
-              className={
-                isDark ? "dark-mode certificate-tag" : "certificate-tag"
-              }
-              onClick={() => openUrlInNewTab(v.url, v.name)}
+              className={isDark ? "dark-mode certificate-tag" : "certificate-tag"}
+              href={url}
+              // PDFs should download (no new tab)
+              {...(pdf ? { download: v?.downloadName || "" } : {})}
+              // Keep navigation in the same tab for non-PDF links too
+              target="_self"
+              rel="noopener noreferrer"
+              style={{ textDecoration: "none" }}
             >
-              {v.name}
-            </span>
+              {v?.name || "Link"}
+            </a>
           );
         })}
+
       </div>
     </div>
   );
