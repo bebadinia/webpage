@@ -283,7 +283,7 @@ const achievementSection = {
       image: require("./assets/images/matlabLogo.png"),
       imageAlt: "MatLab Logo",
       footerLink: [
-        { name: "Certification", url: "/MatlabCertification.pdf"},
+        { name: "Certification", url: "/MatLabCertification.pdf"},
       ]
     }
   ],
