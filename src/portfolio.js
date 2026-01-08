@@ -106,7 +106,7 @@ const educationInfo = {
     {
       schoolName: "St. Mary's University",
       logo: require("./assets/images/stMarysLogo2.png"),
-      subHeader: "Bachelor of Science in Computer Science with Minor in Matheematics",
+      subHeader: "Bachelor of Science in Computer Science with Minor in Mathematics",
       duration: "August 2020 - December 2024",
       desc: "Recipient of Trustee Scholarship.",
       desc3: "Relevant Coursework:",
