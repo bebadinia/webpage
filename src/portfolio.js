@@ -262,6 +262,15 @@ const achievementSection = {
 
   achievementsCards: [
     {
+      title: "Microsoft Certified: Azure Fundamentals",
+      subtitle: "Earned Microsoft Azure Fundamentals certification (AZ-900).",
+      image: require("./assets/images/azureLogo.png"),
+      imageAlt: "Azure Logo",
+      footerLink: [
+        { name: "Certification", url: "/AzureFundamentalsCertification.pdf", downloadName: "AzureFundamentalsCertification.pdf" },
+      ]
+    },
+    {
       title: "Distinguished Graduate",
       subtitle:
         "Recognized as a Distinguished Graduate (Fall 2025).",
