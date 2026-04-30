@@ -308,6 +308,52 @@ const achievementSection = {
   display: true // Set false to hide this section, defaults to true
 };
 
+// Publications Section
+const publicationsSection = {
+  title: "Publications",
+  subtitle:
+    "Published research, conference work, and academic contributions across software engineering and emerging technologies.",
+  publications: [
+    {
+      title: "A Mixed Reality Platform for Interactive Learning in Healthcare and Engineering Education",
+      venue: "ASEE-Gulf Southwest (GSW) Regional Conference",
+      date: "March 8, 2026",
+      citation: [
+                  { text: "Ebadinia, B., & Aktunc, O. (2026, March), " },
+                  {
+                    text:
+                      "A Mixed Reality Platform for Interactive Learning in Healthcare and Engineering Education",
+                    italic: true
+                  },
+                  {
+                    text:
+                      " Paper presented at ASEE-Gulf Southwest (GSW) Regional Conference, College Station, Texas. (10.18260/1-2--58022)."
+                  }
+              ],
+      url: "https://peer.asee.org/58022"
+    },
+    {
+      title: "A Framework for Mixed Reality Within Healthcare Education",
+      venue: "ProQuest",
+      date: "April 29, 2026",
+      citation: [
+                  { text: "Ebadinia, B. (2025), " },
+                  {
+                    text:
+                      "A Framework for Mixed Reality within Healthcare Education",
+                    italic: true
+                  },
+                  {
+                    text:
+                      " Available from Dissertations & Theses @ St Mary's University (Texas). (3324351578)."
+                  }
+              ],
+      url: "https://www.proquest.com/openview/e51a66b49d6618674191d69836bf0a0c/1?pq-origsite=gscholar&cbl=18750&diss=y"
+    }
+  ],
+  display: true
+};
+
 // Resume Section
 const resumeSection = 
 {
@@ -364,6 +410,7 @@ export {
   openSource,
   bigProjects,
   achievementSection,
+  publicationsSection,
   blogSection,
   talkSection,
   podcastSection,

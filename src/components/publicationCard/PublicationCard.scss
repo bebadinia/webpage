@@ -1,0 +1,71 @@
+@import "../../_globalColor";
+
+.publication-card {
+  max-width: 1350px;
+  width: 100%;
+  padding: 28px 32px;
+  border: 1px solid $lightBorder1;
+  border-radius: 10px;
+  background-color: $lightBackground1;
+  box-shadow: 0 0 36px $lightBoxShadow;
+  transition: all 0.3s ease;
+}
+
+.publication-card:hover {
+  box-shadow: 0 20px 40px $lightBoxShadow;
+  transform: translateY(-3px);
+}
+
+.publication-title {
+  color: $textColor;
+  font-size: 28px;
+  font-weight: 700;
+  line-height: 1.2;
+  margin: 0px 0px 14px 0px;
+}
+
+.publication-meta {
+  color: $textColor;
+  font-size: 18px;
+  font-weight: 600;
+  margin: 0px 0px 22px 0px;
+}
+
+.publication-citation {
+  color: $cardSubtitle;
+  font-size: 18px;
+  line-height: 1.45;
+  margin: 0px 0px 28px 0px;
+}
+
+.publication-button {
+  background-color: $buttonColor;
+  color: $textColorDark;
+  border-radius: 4px;
+  padding: 10px 14px;
+  font-size: 14px;
+  font-weight: 600;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.publication-button:hover {
+  background-color: $buttonHover;
+  color: $textColorDark;
+  text-decoration: none;
+}
+
+@media (max-width: 768px) {
+  .publication-card {
+    padding: 24px 22px;
+  }
+
+  .publication-title {
+    font-size: 22px;
+  }
+
+  .publication-meta,
+  .publication-citation {
+    font-size: 16px;
+  }
+}
