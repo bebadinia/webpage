@@ -144,17 +144,17 @@ const workExperiences = {
   display: true, //Set it to true to show workExperiences Section
   experience: [
     {
-      role: "Graduate Research Assistant",
+      role: "Software Engineering Graduate Research Assistant",
       company: "St. Mary’s University Engineering Department",
       companylogo: require("./assets/images/stMarysLogo.png"),
       date: "January 2025 – December 2025",
       desc: " Teaching Assistant & Lab Manager",
       descBullets: [
-        "Prototype Microsoft HoloLens 2 applications in C#/.NET (StereoKit) for UI, 3D interaction, and data‑driven views supporting clinical education/diagnostics.",
-        "Collaborating with cross‑disciplinary stakeholders to turn requirements into working software iterated via sprints and demo feedback.",
-        "Managing the Human-Centered Design Lab: equipment upkeep, experiment setup, technical troubleshooting, and administrative support for faculty/lab users.",
-        "Tutor undergraduate students in Object-Oriented programming and Java development; organized and executed outreach events to engage prospective students and showcase lab capabilities.",
-        "Mentorship: Guide a Cornell undergraduate student on an eye‑tracking + LLM analysis workflow; automated metrics extraction and summary tables in Python/Jupyter Notebook."
+        "Prototyped Universal Windows Platform applications for mixed reality devices and designed user interfaces for 3D interaction and data-driven healthcare visualization.",
+        "Collaborated with cross-disciplinary stakeholders to translate requirements into working software iterated through sprint-based development and demo feedback.",
+        "Managed the Human-Centered Design Lab: organized and executed outreach events, equipment upkeep, experiment setup, technical troubleshooting, and administrative support for faculty and lab users.",
+        "Tutored undergraduate students in object-oriented programming and Java development.",
+        "Guided a Cornell undergraduate student on an eye-tracking and LLM analysis workflow; automated metrics extraction and summary tables in Python using Jupyter Notebook."
       ]
     },
     {
@@ -163,9 +163,9 @@ const workExperiences = {
       companylogo: require("./assets/images/adornJewelryLogo.png"),
       date: "June 2018 – January 2025",
       descBullets: [
-        "Led a team of eight; oversaw high-end merchandise transactions; coordinated inventory, scheduling, sales operations, and promotions.",
-        "Integrated JewelMATE Retail Software with Point-Of-Sale machine which led to a more efficient checkout experience for the customer. ",
-        "Trained up to four employees at a time in sales, service, and customer experience through individual walk-throughs."
+        "Led a team of eight while overseeing inventory, scheduling, sales operations, promotions, high-value merchandise transactions, and technology adoption.",
+        "Integrated JewelMATE Retail Software with the POS system, improving checkout efficiency and customer experience.",
+        "Trained up to four employees at a time on inventory, sales, and customer service procedures through individual walkthroughs."
       ]
     }
   ]
@@ -261,6 +261,15 @@ const achievementSection = {
     "Achievements, Certifications, Award Letters and Some Cool Stuff that I have done !",
 
   achievementsCards: [
+    {
+      title: "Best Student Paper, 3rd Place",
+      subtitle: "Earned 3rd best student paper award at the American Society of Engineering Education (ASEE) Gulf-Side Conference (March 2026).",
+      image: require("./assets/images/aseeLogo.png"),
+      imageAlt: "ASEE Logo",
+      footerLink: [
+        { name: "Certification", url: "/ASEEAward.pdf", downloadName: "ASEEAward.pdf" },
+      ]
+    },
     {
       title: "Microsoft Certified: Azure Fundamentals",
       subtitle: "Earned Microsoft Azure Fundamentals certification (AZ-900).",
