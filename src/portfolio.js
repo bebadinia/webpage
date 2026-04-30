@@ -335,7 +335,7 @@ const publicationsSection = {
     {
       title: "A Framework for Mixed Reality Within Healthcare Education",
       venue: "ProQuest",
-      date: "April 29, 2026",
+      date: "April 3, 2026",
       citation: [
                   { text: "Ebadinia, B. (2025), " },
                   {
